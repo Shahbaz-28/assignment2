@@ -68,7 +68,7 @@ const Step1 = ({ setSubmitStep1, onNext, formData, updateFormData, step }) => {
         <h1 className="text-2xl font-semibold text-gray-700 text-center mb-2">
           Your Profile
         </h1>
-        <p className="text-center text-gray-500 mb-5">
+        <p className="text-center text-[10px] lg:text-[16px] text-gray-500 mb-2 lg:mb-4">
           Enter the login information for your account. You will be <br /> able
           to create additional users after registering.
         </p>
