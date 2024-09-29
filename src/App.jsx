@@ -7,7 +7,7 @@ function App() {
     <>
       <Routes>
         {/* <Route path="/" element={<MasterForm />} /> */}
-        <Route path="/create" element={<MasterCreateAccount />} />
+        <Route path="/" element={<MasterCreateAccount />} />
       </Routes>
     </>
   );
