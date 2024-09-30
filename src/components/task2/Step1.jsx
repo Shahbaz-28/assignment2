@@ -53,17 +53,17 @@ const Step1 = ({ setSubmitStep1, onNext, formData, updateFormData, step }) => {
         Create New Account
       </h1>
       <div className="w-full bg-white rounded-lg shadow-lg p-8">
-      <Stepper
-        steps={[
-          { title: "Step 1: Profile" },
-          { title: "Step 2: Business Information" },
-        ]}
-        activeStep={step - 1} 
-        completeColor="#7D89EC"
-        activeColor="#3856b8"
-        defaultTitleColor="#d3d3d3"
-        completeBarColor="#7D89EC"
-      />
+        <Stepper
+          steps={[
+            { title: "Step 1: Profile" },
+            { title: "Step 2: Business Information" },
+          ]}
+          activeStep={step - 1}
+          completeColor="#7D89EC"
+          activeColor="#3856b8"
+          defaultTitleColor="#d3d3d3"
+          completeBarColor="#7D89EC"
+        />
         <h1 className="text-center text-gray-500 font-medium mb-4">Step 1</h1>
         <h1 className="text-2xl font-semibold text-gray-700 text-center mb-2">
           Your Profile
@@ -81,7 +81,7 @@ const Step1 = ({ setSubmitStep1, onNext, formData, updateFormData, step }) => {
             updateFormData({ stepp1: values });
             localStorage.setItem(
               "accountData",
-              JSON.stringify({ projectDetails: values })
+              JSON.stringify({ stepp1: values })
             );
 
             onNext();
